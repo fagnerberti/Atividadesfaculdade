@@ -5,7 +5,7 @@ public class Conta {
 	private String numConta;
 	private String titular;
 
-	//Contrutor da classe conta
+	// Contrutor da classe conta
 	public Conta(double saldo, String numConta, String titular) {
 		this.saldo = saldo;
 		this.numConta = numConta;
@@ -13,15 +13,16 @@ public class Conta {
 	}
 
 	public void imprimirDados() {
-		System.out.println(
-				"Numero da conta: " + numConta +
-				"\nTitular: " + titular +
-				"\nSaldo: " + saldo);
+		System.out.println("Numero da conta: " + numConta + "\nTitular: " + titular + "\nSaldo: " + saldo);
 	}
 
 	public void deposito(double deposito) {
 		this.saldo += deposito;
 
-}
-	
+	}
+
+	public void saque(double saque) {
+		this.saldo -= saque;
+	}
+
 }
